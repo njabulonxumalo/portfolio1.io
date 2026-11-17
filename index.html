@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -372,4 +372,1145 @@
 
         .experience-card > p {
             color: var(--muted);
-            margin-bottom:
+            margin-bottom: 20px;
+        }
+
+        .experience-card ul {
+            padding-left: 20px;
+            color: #ccc;
+        }
+
+        .experience-card li {
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           PROJECTS SECTION
+        ========================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 28px;
+            border-radius: 12px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 35px rgba(59, 130, 246, 0.12);
+        }
+
+        .project-icon {
+            width: 55px;
+            height: 55px;
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .project-card > p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h4 {
+            font-size: 14px;
+            margin: 15px 0 8px;
+            color: #ddd;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+            color: #bbb;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .project-card li {
+            margin-bottom: 7px;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .project-links a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .project-tags span {
+            background: rgba(59, 130, 246, 0.12);
+            color: #93c5fd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+
+        .project-status {
+            display: inline-block;
+            width: fit-content;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #86efac;
+            background: rgba(34, 197, 94, 0.12);
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           CONTACT SECTION
+        ========================= */
+
+        .contact-content {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-content > p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 20px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .contact-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .contact-link i {
+            color: var(--primary);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 18px 0;
+        }
+
+        .social-links a {
+            color: #ddd;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        /* =========================
+           RESPONSIVE DESIGN
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .container,
+            .navbar {
+                width: 90%;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                min-height: 70px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b1b1b;
+                flex-direction: column;
+                gap: 0;
+                padding: 15px 5%;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 12px 0;
+            }
+
+            .hero {
+                min-height: 550px;
+                padding: 80px 20px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-card {
+                padding: 23px;
+            }
+
+            .project-card {
+                padding: 23px;
+            }
+
+            .about-info {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+        <div class="navbar">
+
+            <a href="#home" class="logo">Njabulo.</a>
+
+            <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
+
+    <header class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                <i class="fas fa-code"></i>
+                UI/UX DESIGNER & FRONT-END DEVELOPER
+            </span>
+
+            <h1>
+                Hi, I'm Njabulo <span>Nxumalo.</span>
+            </h1>
+
+            <h2>
+                Designing Experiences.
+                <span class="highlight">Building Interfaces.</span>
+            </h2>
+
+            <p>
+                I am a UI/UX Designer and Front-End Developer
+                passionate about creating modern, intuitive and
+                responsive digital experiences. I enjoy transforming
+                design concepts into functional web interfaces.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i>
+                    View My Work
+                </a>
+
+                <a href="Njabulo Nxumalo CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline">
+                    <i class="fas fa-file-pdf"></i>
+                    View My CV
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================= -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About <span class="highlight">Me</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A little about my background, interests and professional journey.
+            </p>
+
+            <div class="about-content">
+
+                <p>
+                    I'm a final-year Diploma in Multimedia Computing
+                    student at Tshwane University of Technology (TUT),
+                    with a strong interest in UI/UX design and
+                    front-end development.
+                </p>
+
+                <p>
+                    Currently, I am completing my Work Integrated
+                    Learning (WIL) internship at ICEP, where I work
+                    on user interface design and front-end development
+                    using Figma, React.js, JavaScript, HTML and CSS.
+                </p>
+
+                <p>
+                    I enjoy understanding user needs, designing
+                    intuitive interfaces and translating those
+                    designs into responsive and accessible
+                    web applications.
+                </p>
+
+                <div class="about-info">
+
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        TUT Student
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        ICEP Intern
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-palette"></i>
+                        UI/UX Design
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-code"></i>
+                        Front-End Development
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================= -->
+
+    <section class="section" id="skills">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My <span class="highlight">Skills</span>
+            </h2>
+
+            <p class="section-subtitle">
+                My design and front-end development skills and tools.
+            </p>
+
+            <div class="skills-grid">
+
+                <!-- UI/UX Design -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-pen-ruler"></i>
+                    </div>
+
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        Creating user-friendly interfaces and
+                        meaningful digital experiences through
+                        user-centred design.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Figma</span>
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                        <span>UI Design</span>
+                        <span>UX Fundamentals</span>
+                        <span>Responsive Design</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Front-End Development -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <h3>Front-End Development</h3>
+
+                    <p>
+                        Building responsive and interactive
+                        web interfaces using modern front-end
+                        technologies.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Bootstrap 5</span>
+                        <span>Responsive Layouts</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Development Tools -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+
+                    <h3>Tools & Workflow</h3>
+
+                    <p>
+                        Using design and development tools
+                        to collaborate, build and maintain
+                        web applications.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Chrome DevTools</span>
+                        <span>REST APIs</span>
+                        <span>UI Testing</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE SECTION
+    ========================= -->
+
+    <section class="section" id="experience">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Work <span class="highlight">Experience</span>
+            </h2>
+
+            <p class="section-subtitle">
+                My current professional experience and responsibilities.
+            </p>
+
+            <div class="experience-card">
+
+                <div class="experience-header">
+
+                    <div>
+                        <h3>ICEP Internship</h3>
+
+                        <p>
+                            UI/UX Designer & Front-End Developer Intern
+                        </p>
+                    </div>
+
+                    <span class="experience-date">
+                        July 2026 – December 2026
+                    </span>
+
+                </div>
+
+                <p>
+                    Currently participating in a Work Integrated
+                    Learning (WIL) programme at ICEP, contributing
+                    to the design and front-end development of
+                    university management system interfaces.
+                </p>
+
+                <h4>Key Responsibilities</h4>
+
+                <ul>
+
+                    <li>
+                        Designing user interfaces and user experiences
+                        using Figma.
+                    </li>
+
+                    <li>
+                        Translating UI/UX designs into functional
+                        React.js components.
+                    </li>
+
+                    <li>
+                        Developing responsive interfaces for desktop
+                        and mobile devices.
+                    </li>
+
+                    <li>
+                        Implementing and improving student and lecturer
+                        dashboard interfaces.
+                    </li>
+
+                    <li>
+                        Working on attendance, timetable and
+                        notification interfaces.
+                    </li>
+
+                    <li>
+                        Improving interface consistency, usability
+                        and accessibility.
+                    </li>
+
+                    <li>
+                        Collaborating with the development team
+                        using Git and GitHub.
+                    </li>
+
+                </ul>
+
+                <div class="project-tags">
+
+                    <span>React.js</span>
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Figma</span>
+                    <span>GitHub</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================= -->
+
+    <section class="section" id="projects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My <span class="highlight">Projects</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A selection of my UI/UX design and front-end
+                development work.
+            </p>
+
+            <div class="projects-grid">
+
+
+                <!-- ICEP INTERNSHIP -->
+
+                <div class="project-card">
+
+                    <span class="project-status">
+                        <i class="fas fa-circle"></i>
+                        Currently Working
+                    </span>
+
+                    <div class="project-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+
+                    <h3>ICEP – UniSync & TUT Systems</h3>
+
+                    <p>
+                        Contributing to university management
+                        system projects during my ICEP internship.
+                        My work focuses on UI/UX design and
+                        implementing responsive front-end
+                        interfaces using React.js.
+                    </p>
+
+                    <h4>My Role</h4>
+
+                    <ul>
+
+                        <li>
+                            Designed user interfaces and prototypes
+                            using Figma.
+                        </li>
+
+                        <li>
+                            Converted design concepts into
+                            React.js components.
+                        </li>
+
+                        <li>
+                            Developed student and lecturer
+                            dashboard interfaces.
+                        </li>
+
+                        <li>
+                            Worked on attendance and notification
+                            interfaces.
+                        </li>
+
+                        <li>
+                            Improved desktop and mobile responsiveness.
+                        </li>
+
+                    </ul>
+
+                    <h4>Design Projects – Figma</h4>
+
+                    <div class="project-links">
+
+                        <a href="https://www.figma.com/design/370esXPdQQ6vqRJFFO9arB/TUT-Smart-Campus?node-id=3-3&p=f&m=dev"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fab fa-figma"></i>
+                            TUT Smart Campus
+
+                        </a>
+
+                        <a href="https://www.figma.com/design/ciikAJy9sRElY4MBy0BKh8/TUT-System--Copy-?node-id=1508-567&m=dev&t=TN1lbeCduGvAzZLL-1"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fab fa-figma"></i>
+                            TUT System
+
+                        </a>
+
+                    </div>
+
+                    <div class="project-tags">
+
+                        <span>Figma</span>
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EVOTING SYSTEM -->
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fas fa-vote-yea"></i>
+                    </div>
+
+                    <h3>eVoting System</h3>
+
+                    <p>
+                        An electronic voting system designed
+                        to simplify the voting process for
+                        students and organisations. It allows
+                        users to register, log in, vote for
+                        candidates and view election results.
+                    </p>
+
+                    <h4>My Role</h4>
+
+                    <ul>
+
+                        <li>
+                            Designed and developed the front-end interface.
+                        </li>
+
+                        <li>
+                            Created responsive web pages.
+                        </li>
+
+                        <li>
+                            Worked on database design and management.
+                        </li>
+
+                        <li>
+                            Integrated the front-end with
+                            back-end functionality.
+                        </li>
+
+                        <li>
+                            Participated in testing and debugging.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-tags">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/njabulonxumalo/eVotingSystem"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- THE LOOP TROOP -->
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <h3>THE Loop Troop</h3>
+
+                    <p>
+                        A collaborative software development
+                        project completed as part of a team.
+                        The project involved developing a
+                        functional web application with a
+                        focus on user interface development.
+                    </p>
+
+                    <h4>My Role</h4>
+
+                    <ul>
+
+                        <li>
+                            Developed the front-end user interface.
+                        </li>
+
+                        <li>
+                            Implemented responsive layouts.
+                        </li>
+
+                        <li>
+                            Worked on database structures.
+                        </li>
+
+                        <li>
+                            Collaborated with team members using GitHub.
+                        </li>
+
+                        <li>
+                            Tested and improved application usability.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-tags">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>GitHub</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/Bernadeuo219000642/THE_Loop_Troop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REAL ESTATE PROJECT -->
+
+                <div class="project-card">
+
+                    <span class="project-status">
+                        In Progress
+                    </span>
+
+                    <div class="project-icon">
+                        <i class="fas fa-house"></i>
+                    </div>
+
+                    <h3>Real Estate Management System</h3>
+
+                    <p>
+                        A property management platform designed
+                        to help users browse, buy, sell and
+                        manage properties. The system focuses
+                        on a user-friendly property browsing
+                        experience and responsive interfaces.
+                    </p>
+
+                    <h4>My Role</h4>
+
+                    <ul>
+
+                        <li>
+                            Designing modern and user-friendly interfaces.
+                        </li>
+
+                        <li>
+                            Developing responsive front-end pages.
+                        </li>
+
+                        <li>
+                            Implementing property listing interfaces.
+                        </li>
+
+                        <li>
+                            Building buyer, seller and admin
+                            dashboard interfaces.
+                        </li>
+
+                        <li>
+                            Improving navigation and user experience.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-tags">
+
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================= -->
+
+    <section class="section" id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Get In <span class="highlight">Touch</span>
+            </h2>
+
+            <p class="section-subtitle">
+                Interested in working together or discussing
+                a project? Feel free to contact me.
+            </p>
+
+            <div class="contact-content">
+
+                <p>
+                    I'm open to opportunities in UI/UX Design
+                    and Front-End Development. Let's connect!
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:njabulonxumalo1234@gmail.com"
+                        class="contact-link">
+
+                        <i class="fas fa-envelope"></i>
+                        Email Me
+
+                    </a>
+
+                    <a href="https://github.com/njabulonxumalo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link">
+
+                        <i class="fab fa-github"></i>
+                        GitHub
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link">
+
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="social-links">
+
+            <a href="https://github.com/njabulonxumalo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="mailto:njabulonxumalo1234@gmail.com"
+                aria-label="Email">
+
+                <i class="fas fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p>
+            &copy; <span id="year"></span> Njabulo Nxumalo.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            UI/UX Designer | Front-End Developer
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        // Mobile navigation menu
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+        const menuIcon = menuToggle.querySelector("i");
+
+        menuToggle.addEventListener("click", () => {
+
+            const isOpen = navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+            menuIcon.classList.toggle("fa-bars", !isOpen);
+            menuIcon.classList.toggle("fa-xmark", isOpen);
+
+        });
+
+
+        // Close mobile menu after clicking a navigation link
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+
+            });
+
+        });
+
+
+        // Automatically update footer year
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
